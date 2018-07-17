@@ -6,6 +6,7 @@
 #include <QVideoWidget>
 #include <QDebug>
 #include <QFileDialog>
+
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -18,8 +19,7 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::on_btnChangeText_clicked() {
-    ui->btxtView->setText(ui->txtInput->toPlainText());
+void MainWindow::on_btnSelectVideo_clicked() {
 
     QMediaPlayer* player = new QMediaPlayer();
     QVideoWidget* vw = new QVideoWidget();

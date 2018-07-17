@@ -17,7 +17,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_btnChangeText_clicked();
+    void on_btnSelectVideo_clicked();
 
 private:
     Ui::MainWindow *ui;
